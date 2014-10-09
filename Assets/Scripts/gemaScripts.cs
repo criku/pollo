@@ -2,17 +2,12 @@
 using System.Collections;
 
 public class gemaScripts : MonoBehaviour {
+	public string nivel = "Nivel 03";
+	void OnTriggerEnter(Collision2D other){
+		if (other.transform.tag == "Player")
+Application.LoadLevel (nivel);
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-	void OnCollisionEnter (Collision2D coll){
-		if (coll.collider Transform.tag == "Player")
+						
+}
 }
